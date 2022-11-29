@@ -62,7 +62,7 @@ def scrape(url):
 
 def gpt(prompt):
     openai.api_key = ""
-    r = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.2, max_tokens=500)
+    r = openai.Completion.create(model="text-davinci-003", prompt=prompt, temperature=0.2, max_tokens=500)
     response = r.choices[0]['text']
 
     return response
