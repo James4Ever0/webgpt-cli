@@ -24,7 +24,7 @@ def search(query):
 
   hl =  "en"
   gl = "us"
-  key = "ccec77fdc3ce624ad18a680eb61ff4d62f5cada1246e3f03eba613c76bc63944"
+  key = ""
 
   params = {
     "q": query,
@@ -61,7 +61,7 @@ def scrape(url):
     return x
 
 def gpt(prompt):
-    openai.api_key = "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"
+    openai.api_key = ""
     r = openai.Completion.create(model="text-davinci-002", prompt=prompt, temperature=0.2, max_tokens=500)
     response = r.choices[0]['text']
 
